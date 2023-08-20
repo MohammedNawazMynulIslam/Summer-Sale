@@ -43,5 +43,5 @@ const applyCoupon = document.getElementById('apply-coupon').addEventListener('cl
 })
 }
 function GoHome() {
-    window.location.reload(); // Reloads the current page
+    window.location.reload();
   }
