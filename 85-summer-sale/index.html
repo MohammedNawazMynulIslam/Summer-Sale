@@ -43,10 +43,14 @@
       <div class="flex flex-col lg:flex-row">
         <!-- items container -->
         <div
-          class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto"
+          class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-5"
         >
           <!-- card-1 -->
-          <div class="card w-[342px] h-[350px] bg-base-100 shadow-xl">
+          <div
+            class="card w-[342px] h-[350px] bg-base-100 shadow-xl"
+            id="card-1"
+            onclick="getName(this)"
+          >
             <figure class="px-10 pt-10">
               <img
                 src="./images/prod1.png"
@@ -87,7 +91,11 @@
             </div>
           </div>
           <!-- card-2 -->
-          <div class="card w-[342px] h-[350px] bg-base-100 shadow-xl">
+          <div
+            class="card w-[342px] h-[350px] bg-base-100 shadow-xl"
+            id="card-2"
+            onclick="getName(this)"
+          >
             <figure class="px-10 pt-10">
               <img
                 src="./images/prod2.png"
@@ -128,7 +136,11 @@
             </div>
           </div>
           <!-- card-3 -->
-          <div class="card w-[342px] h-[350px] bg-base-100 shadow-xl">
+          <div
+            class="card w-[342px] h-[350px] bg-base-100 shadow-xl"
+            id="card-3"
+            onclick="getName(this)"
+          >
             <figure class="px-10 pt-10">
               <img
                 src="./images/prod3.png"
@@ -192,7 +204,11 @@
             class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto"
           >
             <!-- card-4 -->
-            <div class="card w-[342px] h-[350px] bg-base-100 shadow-xl">
+            <div
+              class="card w-[342px] h-[350px] bg-base-100 shadow-xl"
+              id="card-4"
+              onclick="getName(this)"
+            >
               <figure class="px-10 pt-10">
                 <img
                   src="./images/prod4.png"
@@ -233,7 +249,11 @@
               </div>
             </div>
             <!-- card-5 -->
-            <div class="card w-[342px] h-[350px] bg-base-100 shadow-xl">
+            <div
+              class="card w-[342px] h-[350px] bg-base-100 shadow-xl"
+              id="card-5"
+              onclick="getName(this)"
+            >
               <figure class="px-10 pt-10">
                 <img
                   src="./images/prod5.png"
@@ -274,7 +294,11 @@
               </div>
             </div>
             <!-- card-6 -->
-            <div class="card w-[342px] h-[350px] bg-base-100 shadow-xl">
+            <div
+              class="card w-[342px] h-[350px] bg-base-100 shadow-xl"
+              id="card-6"
+              onclick="getName(this)"
+            >
               <figure class="px-10 pt-10">
                 <img
                   src="./images/prod6.png"
@@ -317,22 +341,27 @@
           </div>
           <!-- Make Purchase start -->
           <div class="w-[340px] h-[416px] bg-white p-6 mb-52">
-            <div></div>
+            <div
+              class="product-list list-none numbered-list"
+              id="product-list"
+            ></div>
             <hr />
             <div>
               <p class="text-2xl font-medium leading-10">
-                total price: <span>00.00 </span>Tk
+                total price: <span id="total-price">00</span>.00Tk
               </p>
               <p class="text-2xl font-medium leading-10">
-                Discount: <span>00.00 </span>Tk
+                Discount: <span>00</span>.00Tk
               </p>
               <p class="text-2xl font-medium leading-10">
-                Total: <span>00.00 </span>Tk
+                Total: <span>00</span>.00Tk
               </p>
               <hr />
             </div>
             <button
               class="w-[200px] h-14 bg-[#E527B2] text-white rounded-lg mt-6 ml-10"
+              id="purchase-btn"
+              disabled
             >
               Make Purchase
             </button>
