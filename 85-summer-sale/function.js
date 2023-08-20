@@ -41,6 +41,7 @@ const applyCoupon = document.getElementById('apply-coupon').addEventListener('cl
         Total.innerText = newTotal;
     }
 })
-
-
 }
+function GoHome() {
+    window.location.reload(); // Reloads the current page
+  }

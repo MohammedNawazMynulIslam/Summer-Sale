@@ -363,13 +363,33 @@
               </p>
               <hr />
             </div>
+            <!-- You can open the modal using ID.showModal() method -->
             <button
-              class="w-[200px] h-14 bg-[#E527B2] text-white rounded-lg mt-6 ml-10"
+              class="btn w-[200px] h-14 bg-[#E527B2] text-white rounded-lg mt-6 ml-10"
               id="purchase-btn"
-              disabled
+              disabled:bg-[#E527B2]
+              onclick="my_modal_4.showModal()"
             >
               Make Purchase
             </button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+                <img class="mx-auto" src="./images/congo.png" alt="" />
+                <h3 class="font-bold text-5xl text-center">Congratulations</h3>
+                <p class="py-4 text-2xl text-[#11111180] text-center">
+                  You have Purchase the product
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button, it will close the modal -->
+                  <button
+                    class="btn w-[200px] h-14 bg-[#E527B2] text-white rounded-lg mt-3 mx-auto"
+                    onclick="GoHome()"
+                  >
+                    Go Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
           </div>
 
           <!-- Make Purchase end  -->
