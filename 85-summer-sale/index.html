@@ -187,9 +187,14 @@
           <input
             class="ml-6 px-6 w-36 h-8 border border-black"
             type="text"
+            id="coupon-code"
             placeholder="Coupon code"
           />
-          <button class="bg-[#E527B2] w-20 h-8 text-white rounded-r-lg">
+          <button
+            id="apply-coupon"
+            disabled
+            class="bg-[#E527B2] w-20 h-8 text-white rounded-r-lg"
+          >
             Apply
           </button>
         </div>
@@ -351,10 +356,10 @@
                 total price: <span id="total-price">00</span>.00Tk
               </p>
               <p class="text-2xl font-medium leading-10">
-                Discount: <span>00</span>.00Tk
+                Discount: <span id="discount">00</span>.00Tk
               </p>
               <p class="text-2xl font-medium leading-10">
-                Total: <span>00</span>.00Tk
+                Total: <span id="Total">00</span>.00Tk
               </p>
               <hr />
             </div>
